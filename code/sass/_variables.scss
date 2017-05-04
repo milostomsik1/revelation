@@ -1,0 +1,23 @@
+//USER VARIABLES
+$purple: #55415f;
+$light-purple: #9f80a9;
+$white: #fff;
+$black: #000;
+$nav-link: #333;
+$light-gray: #999999;
+$dark-gray: #222222;
+$medium-gray: #807d77;
+$hero-gray-bg: #ebebeb;
+
+
+
+//BOOTSTRAP OVERRIDE
+$btn-primary-bg: $purple;
+$input-bg: #353535;
+$input-border: darken($input-bg, 5%);
+$input-border-focus: $light-purple;
+$input-color: $white;
+$nav-link-hover-bg: $white;
+
+$font-family-serif: Merriweather;
+$font-family-sans-serif: Merriweather;

@@ -1,0 +1,275 @@
+////////////////////////////////////////////////////////MOBILE VIEW FIXES
+@media (max-width: 767px) {
+	nav > .container {
+		min-height: 0 !important;
+	}
+	#hero > .container > .row > .col-md-5.hero-text {
+		margin: 20px 0 80px 0;
+		text-align: center;
+	}
+	#mobile-nav {
+		display: block;
+		padding: 10px 0;
+		background-color: $purple;
+		color: $white;
+		text-decoration: none;
+		font-size: 16px;
+		border: none;
+		border-bottom: 20px;
+		&:hover {
+			background-color: $light-purple;
+			border: none;
+		}
+	}
+
+	#mobile-menu {
+		height: 0;
+		margin: 0;
+		a {
+			border: none !important;
+			&:hover {
+				background-color: $light-purple;
+				color: $white;
+				border: none !important;
+			}
+		}
+	}
+
+	#mobile-menu.expand {
+		height: auto;
+	}
+
+	.arrow-left, .arrow-right  {
+		display: none;
+	}
+
+	#section1 .row {
+		border-radius: 0 !important;
+	}
+
+	#section1 .col-sm-6, #section2 .col-sm-6{
+		padding: 20px !important;
+	}
+}
+
+p, a {
+	line-height: 1.7;
+}
+
+////////////////////////////////////////////////////////HEADER
+header {
+	background-color: $purple;
+	.navbar-nav>li>a {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	a {
+		color: $white;
+		font-size: 11px;
+		&:hover {
+			color: $purple;
+		}
+	}
+
+}
+
+.header-menu-icons-xs {
+	padding: 7px 0;
+	color: $white;
+	&:hover {
+		color: $light-purple;
+	}
+}
+////////////////////////////////////////////////////////NAVBAR
+nav {
+	.container {
+		min-height: 130px;
+		.row {
+			ul {
+				margin: 33px 0 43px 0;
+				border-bottom: 1px solid $hero-gray-bg;
+				li {
+					font-size: 12px;
+					text-transform: uppercase;
+				}
+			}
+			h1 {
+				color: $black;
+				font-size: 26px;
+				text-transform: uppercase;
+				.letter-R {
+					font-size: 36px;
+				}
+			}
+			h3 {
+				color: $light-gray;
+				font-size: 12px;
+				margin-top: 0;
+			}
+			a {
+				border-bottom: 3px solid transparent;
+				color: $nav-link;
+				&:hover {
+					color: $purple;
+					border-bottom: 3px solid $purple;
+				}
+			}
+		}
+	}
+}
+
+////////////////////////////////////////////////////////HERO
+#hero {
+	position: relative;
+	z-index: 0;
+	min-height: 310px;
+	background-color: $hero-gray-bg;
+	.row {
+		display: flex;
+		align-items: center;
+		.hero-image {
+			display: flex;
+			height: 420px;
+			img {
+				align-self: flex-end;
+				width: 100%;
+				height: 394px;
+			}
+		}
+		.hero-text {
+			margin: 50px 0;
+			h2 {
+				font-size: 36px;
+				text-transform: uppercase;
+			}
+			h4 {
+				font-size: 16px;
+			}
+			a {
+				font-size: 16px;
+				text-transform: uppercase;
+				margin-top: 17px;
+			}
+		}
+	}
+}
+
+////////////////////////////////////////////////////////CONTENT div
+#content {
+	margin-top: -88px;
+	position: relative;
+	z-index: 99;
+	.row {
+		position: relative;
+	}
+}
+
+.arrow-left {
+	position: absolute;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	a {
+		display: block;
+		padding: 14px 8px;
+	}
+}
+.arrow-right {
+	position: absolute;
+	z-index: 999;
+	top: 0;
+	right: 0;
+	a {
+		display: block;
+		padding: 14px 8px;
+	}
+}
+////////////////////////////////////////////////////////SECTION 1
+#section1 {
+	margin:  40px 0;
+
+	.row {
+		background-color: $white;
+		border-top-right-radius: 20px;
+		border-top-left-radius: 20px;
+		padding-top: 30px;
+		h3 {
+			font-size: 18px;
+			color: $purple
+		}
+		p {
+			font-size: 13px;
+			color: $medium-gray;
+		}
+	}
+}
+
+////////////////////////////////////////////////////////TEXT IN BETWEEN SECTION 1 and 2
+.text-in-between-sections {
+	p {
+		font-size: 18px;
+		margin: 0;
+	}
+}
+
+////////////////////////////////////////////////////////SECTION 2
+#section2 {
+	margin: 40px 0;
+	img {
+		width: 100%;
+		height: auto;
+		padding: 20px 0;
+	}
+	a {
+		font-size: 13px;
+		color: $purple;
+	}
+	h3 {
+		font-size: 18px;
+		color: $medium-gray;
+	}
+	p {
+		font-size: 13px;
+		color: $medium-gray;
+		margin-bottom: 20px;
+	}
+}
+
+////////////////////////////////////////////////////////FOOTER
+footer {
+	background-color: $dark-gray;
+	h3 {
+		color: $white;
+	}
+	p {
+		color: $medium-gray;
+	}
+	a {
+		color: $light-purple;
+		&:hover {
+			color: $white;
+		}
+	}
+	ul {
+		list-style-type: none;
+		li::before {
+			content: "» ";
+			color: $white;
+		}
+	}
+
+	button.btn-primary {
+		margin-top: 10px;
+		background-color: $light-purple;
+	}
+	.form-control {
+		margin: 10px 0;
+	}
+	hr {
+		border-color: $input-bg;
+	}
+	.footer-social {
+		margin-top: 20px;
+		color: $light-purple;
+	}
+}
